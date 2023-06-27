@@ -11,6 +11,9 @@ from credentials import OPENAI_API_KEY
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
+# For streamlit deployment purpose only.
+# Comment this when executing this script locally.
+OPENAI_API_KEY = st.secrets['openai_api_key']
 
 def read_pdf(file):
 
