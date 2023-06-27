@@ -7,10 +7,9 @@ from langchain.vectorstores import Chroma # for the vectorization part
 from langchain.chains import ChatVectorDBChain # for chatting with the pdf
 from langchain.llms import OpenAI # the LLM model we'll use (CHatGPT)
 from openai.error import RateLimitError
+from credentials import OPENAI_API_KEY
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
-
-OPENAI_API_KEY = "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"
 
 
 def read_pdf(file):
